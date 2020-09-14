@@ -1,0 +1,34 @@
+# config file saving all important data
+%YAML 1.1
+---
+- dataworks:
+    folders:
+          urs:
+            wdir:     '/home/urs/sync/projects/autostim/analysis/iPScnn'
+            #wdir:     '/home/urs/sync/projects/autostim'
+            patlist:  '/home/urs/sync/projects/autostim/data/patientenliste_onoff.xlsx'
+            datpath:  '/home/urs/sync/projects/autostim/data/csvdata/nopca/'
+            emgrawdir:  '/home/urs/sync/projects/autostim/data/csvdata/nopca_raw/'
+          david:
+            wdir:      '/media/storage/iPScnn'
+            patlist:   '/media/david/windows/Dokumente und Einstellungen/dpedrosa/Jottacloud/onoff_svm/patientenliste_onoff.xlsx'
+            datpath:   '/media/david/windows/Dokumente und Einstellungen/dpedrosa/Jottacloud/onoff_svm/analyses/csvdata/nopca/'
+            emgrawdir: '/media/david/windows/Dokumente und Einstellungen/dpedrosa/Jottacloud/onoff_svm/analyses/csvdata/nopca_raw/'
+          dpedrosa:
+            wdir:      'D:/iPScnn'
+            patlist:   'C:/Users/dpedrosa/Jottacloud/onoff_svm/patientenliste_onoff.xlsx'
+            datpath:   'C:/Users/dpedrosa/Jottacloud/onoff_svm/analyses/csvdata/nopca/'
+            emgrawdir: 'C:/Users/dpedrosa/Jottacloud/onoff_svm/analyses/csvdata/nopca_raw/'
+
+    ignbad: true
+    scaling: false
+    conds: ['ON', 'OFF']
+    tasks:
+      - 'hld'
+      - 'dd'
+      - 'tap'
+    dev:
+      - 'ACC'
+      - 'GYRO'
+
+
